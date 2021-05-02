@@ -56,6 +56,14 @@ struct AnimalDetailView: View {
                 .padding(.horizontal)
                 
                 // Description
+                Group {
+                    HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
+                    
+                    Text(animal.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+                }
+                .padding(.horizontal)
                 
                 // Map
                 
