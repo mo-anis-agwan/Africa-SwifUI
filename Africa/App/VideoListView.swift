@@ -16,8 +16,10 @@ struct VideoListView: View {
     var body: some View {
         NavigationView {
             List(videos) { item in
-                VideoListItem(video: item)
-                    .padding(.vertical, 8)
+                NavigationLink(destination: VideoPlayerView(videoSelected: item.id, videoTitle: item.name)) {
+                    VideoListItem(video: item)
+                        .padding(.vertical, 8)
+                }
             } //: List
             .listStyle(InsetGroupedListStyle())
             .navigationBarTitle("Videos", displayMode: .inline)
