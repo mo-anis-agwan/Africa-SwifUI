@@ -49,10 +49,11 @@ struct ContentView: View {
                             NavigationLink(
                                 destination: AnimalDetailView(animal: animal),
                                 label: {
-                                    AnimalListItemView(animal: animal)
+                                    AnimalListItemView(animal: animal) //: Link
                                 })
-                        }
-                        
+                        } //: Loop
+                        CopyrightView()
+                            .modifier(CenterModifier())
                     } //: List
                 } else {
                     ScrollView(.vertical, showsIndicators: false) {
