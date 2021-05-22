@@ -16,7 +16,7 @@ struct CopyrightView: View {
                 .frame(width: 128, height: 128)
             
             Text("""
-    Copyright @ Childish El-Nino
+    Copyright @ Childish El-Niño
     All rights reserved
     """)
                 .font(.footnote)
